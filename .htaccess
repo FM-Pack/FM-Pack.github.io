@@ -5,7 +5,6 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule strona-glowna index.html
 RewriteRule pobierz-paczke pobierz-paczke.html
 
 ErrorDocument 404 /404.html
