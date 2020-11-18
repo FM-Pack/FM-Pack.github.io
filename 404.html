@@ -10,20 +10,94 @@
      <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
 
      <style>
-         .container
-         {
-            font-family: 'Open Sans', sans-serif;
-            text-align: center;
-         }
-     </style>
 
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            margin: 0;
+            background-color: #f4f2f3;
+            color: #303030;
+        }
+        header {
+            background: #2ccafa;
+        }
+
+        header::after {
+        content: '';
+        display: table;
+        clear: both;
+        }
+
+        .logo {
+        float: left;
+        padding: 25px 40px;
+        }
+
+        nav {
+        float: right;
+        }
+
+        nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+
+        nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+
+        position: relative;
+        }
+
+        nav a {
+        color: #444;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        }
+
+        nav a:hover {
+        color: #000;
+        }
+
+        nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #444;
+
+        position: absolute;
+        top: 0;
+        width: 0%;
+
+        transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before {
+        width: 100%;
+        }
+
+     </style>
   </head>
   <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                FM-Pack
 
-    <div class="container">
-        <h2>Zginąłeś w lawie!</h2>
-        <a href=/index.html>Odródź się na stronie głównej!</a>
-    </div>
+            </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Strona główna</a></li>
+              <li><a href="pobierz.html">Pobierz paczkę</a></li>
+              <li><a href="https://discord.com">Discord</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
   </body>
 
