@@ -21,8 +21,9 @@
             background-color: #f4f2f3;
             color: #303030;
         }
-        header {
-            background: #2ccafa;
+        a{
+          text-decoration: none;
+          color: #f4f2f3;
         }
 
         header::after {
@@ -81,10 +82,23 @@
         nav a:hover::before {
         width: 100%;
         }
+        footer{
+          width: 100%;
+          height: 15px;
+          background-color: #323232;
+          color:#666;
+          text-decoration: none;
+          text-align: center;
+          position:absolute;
+        }
+        .wrapper{
+          min-height: 100%;
+        }
 
      </style>
   </head>
   <body>
+  <div class="wrapper">
     <header>
         <div class="container">
             <div class="logo">
@@ -101,7 +115,7 @@
           </nav>
         </div>
       </header>
-
+  </div>
   </body>
 
 </html>
